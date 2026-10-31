@@ -1,0 +1,43 @@
+{
+  "name": "ledger-x",
+  "version": "1.0.0",
+  "description": "LEDGER X \u2014 professional business management & database studio for Android (Capacitor + SQLite + Supabase).",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.5"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/build.mjs --watch & node --experimental-sqlite --no-warnings scripts/dev-server.mjs",
+    "serve": "node --experimental-sqlite --no-warnings scripts/dev-server.mjs",
+    "test": "node --test --experimental-sqlite --no-warnings tests/*.test.mjs",
+    "e2e": "node --experimental-sqlite --no-warnings scripts/e2e.mjs",
+    "icons": "node scripts/icons.mjs",
+    "cap:sync": "npm run build && npx cap sync android",
+    "android": "npm run cap:sync && npx cap open android"
+  },
+  "dependencies": {
+    "@capacitor-community/sqlite": "^7.0.0",
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/app": "^7.0.0",
+    "@capacitor/core": "^7.0.0",
+    "@capacitor/filesystem": "^7.0.0",
+    "@capacitor/keyboard": "^7.0.0",
+    "@capacitor/network": "^7.0.0",
+    "@capacitor/share": "^7.0.0",
+    "@capacitor/splash-screen": "^7.0.0",
+    "@capacitor/status-bar": "^7.0.0",
+    "capacitor-secure-storage-plugin": "^0.11.0",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^6.2.108",
+    "sql.js": "^1.12.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.0.0",
+    "esbuild": "^0.28.2",
+    "playwright": "^1.63.0",
+    "sharp": "^0.35.4"
+  }
+}

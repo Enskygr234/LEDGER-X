@@ -1,0 +1,82 @@
+/* Dark is the signature theme; light mirrors it. */
+:root,
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0B0D12;
+  --bg-2: #121620;
+  --card: #181E2A;
+  --card-2: #1D2432;
+  --raised: #222A3A;
+  --accent: #6C8CFF;
+  --accent-ink: #0B0D12;
+  --accent-soft: rgba(108, 140, 255, 0.14);
+  --accent-2: #36D6B0;
+  --accent-2-soft: rgba(54, 214, 176, 0.14);
+  --text: #F5F7FA;
+  --text-2: #929BAA;
+  --text-3: #5F6878;
+  --border: #252D3A;
+  --border-strong: #323C4D;
+  --danger: #FF6B6B;
+  --danger-soft: rgba(255, 107, 107, 0.13);
+  --warning: #F5B451;
+  --warning-soft: rgba(245, 180, 81, 0.14);
+  --success: #36D6B0;
+  --success-soft: rgba(54, 214, 176, 0.14);
+  --info-soft: rgba(146, 155, 170, 0.14);
+  --shadow-sm: 0 1px 0 rgba(255, 255, 255, 0.02) inset, 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.35), 0 1px 0 rgba(255, 255, 255, 0.03) inset;
+  --shadow-lg: 0 24px 64px rgba(0, 0, 0, 0.55);
+  --scrim: rgba(4, 6, 10, 0.62);
+  /* Categorical chart slots — validated (lightness band, chroma, CVD ΔE ≥ 11) against #181E2A */
+  --chart-1: #5574EB;
+  --chart-2: #169F80;
+  --chart-3: #BC7F1C;
+  --chart-4: #E5484D;
+  --chart-5: #8B66E0;
+  --chart-6: #929BAA;
+  --grid: rgba(146, 155, 170, 0.12);
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+  --bg: #F5F7FA;
+  --bg-2: #EDF0F5;
+  --card: #FFFFFF;
+  --card-2: #F8F9FC;
+  --raised: #FFFFFF;
+  --accent: #526FFF;
+  --accent-ink: #FFFFFF;
+  --accent-soft: rgba(82, 111, 255, 0.10);
+  --accent-2: #0FA884;
+  --accent-2-soft: rgba(15, 168, 132, 0.10);
+  --text: #172033;
+  --text-2: #667085;
+  --text-3: #98A2B3;
+  --border: #E4E7EE;
+  --border-strong: #D0D5DD;
+  --danger: #E5484D;
+  --danger-soft: rgba(229, 72, 77, 0.09);
+  --warning: #C77D0A;
+  --warning-soft: rgba(199, 125, 10, 0.10);
+  --success: #0FA884;
+  --success-soft: rgba(15, 168, 132, 0.10);
+  --info-soft: rgba(102, 112, 133, 0.10);
+  --shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.06);
+  --shadow-md: 0 8px 24px rgba(16, 24, 40, 0.08), 0 1px 2px rgba(16, 24, 40, 0.05);
+  --shadow-lg: 0 24px 64px rgba(16, 24, 40, 0.18);
+  --scrim: rgba(16, 24, 40, 0.38);
+  /* validated against #FFFFFF */
+  --chart-1: #526FFF;
+  --chart-2: #0FA884;
+  --chart-3: #C77D0A;
+  --chart-4: #E5484D;
+  --chart-5: #8B5CF6;
+  --chart-6: #98A2B3;
+  --grid: rgba(102, 112, 133, 0.12);
+}
+
+html.theme-anim,
+html.theme-anim * {
+  transition: background-color var(--dur-slow) var(--ease), border-color var(--dur-slow) var(--ease), color var(--dur-slow) var(--ease), fill var(--dur-slow) var(--ease) !important;
+}

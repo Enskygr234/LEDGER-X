@@ -1,0 +1,4 @@
+/* Inter (SIL Open Font License 1.1) — subset to Latin, Latin Extended (incl. Turkish), punctuation & currency symbols. Bundled for offline use. */
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 400; font-display: swap; src: url("assets/fonts/Inter-Regular.woff") format("woff"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 500; font-display: swap; src: url("assets/fonts/Inter-Medium.woff") format("woff"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 600 700; font-display: swap; src: url("assets/fonts/Inter-SemiBold.woff") format("woff"); }
